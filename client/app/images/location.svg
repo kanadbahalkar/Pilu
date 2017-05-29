@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="21px" viewBox="0 0 16 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pilu-Wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="w3.-Feed" transform="translate(-1116.000000, -124.000000)" stroke="#979797">
+            <g id="Feed-Item" transform="translate(550.000000, 100.000000)">
+                <g id="Feed-Item-Header">
+                    <path d="M574,45 C577.958429,39.1170434 581,35.5228475 581,32 C581,28.4771525 577.865993,25 574,25 C570.134007,25 567,28.4771525 567,32 C567,35.5228475 570.482195,39.1170434 574,45 Z M574,33 C575.104569,33 576,32.1045695 576,31 C576,29.8954305 575.104569,29 574,29 C572.895431,29 572,29.8954305 572,31 C572,32.1045695 572.895431,33 574,33 Z" id="location"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

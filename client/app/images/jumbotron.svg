@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1680px" height="300px" viewBox="0 0 1680 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>jumbotron</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M235.005978,240 C408.547358,240 524.914591,108.194199 649.821887,72.4338644 C774.729182,36.6735297 814.875794,41.8398188 914.67105,-30.3307949 C1100.88764,-165.000175 636.01074,-271.264307 235.005978,-271.264307 C-165.998784,-271.264307 -486,-419.11873 -486,-277.93699 C-486,-136.75525 -165.998784,240 235.005978,240 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.745098039   0 0 0 0 0.835294118   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M148.733508,181 C322.209307,181 424.53432,56.1101168 549.394413,20.3273991 C674.254505,-15.4553186 774.784928,-2.57637163 874.542471,-74.7921583 C1060.68868,-209.54583 549.58673,-330.584317 148.733508,-330.584317 C-252.119713,-330.584317 -572,-422.543945 -572,-281.273836 C-572,-140.003728 -252.119713,181 148.733508,181 Z" id="path-3"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="28" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.97868835   0 0 0 0 0.640578402   0 0 0 0 0.610772739  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artwork" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="jumbotron">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="1900" height="600"></rect>
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#AEC9FC" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Oval" fill-opacity="1" fill="black">
+                <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

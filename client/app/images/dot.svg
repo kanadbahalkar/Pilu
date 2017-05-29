@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4px" height="4px" viewBox="0 0 4 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>dot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pilu-Wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="w3.-Feed" transform="translate(-1269.000000, -133.000000)" fill="#9B9B9B">
+            <g id="Feed-Item" transform="translate(550.000000, 100.000000)">
+                <g id="Feed-Item-Header">
+                    <circle id="dot" cx="721" cy="35" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,83 @@
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container header-container ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="images/pilu-logo-black.svg"/></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                <ul class="nav navbar-nav jumbotron-nav">
+                    <li><a ng-href=""><img src="images/search-icon.svg"/></a></li>
+                    <!--<li><a ng-href="/"><img src="images/vertical-seperator.svg"/></a></li>-->
+                    <li><a ng-href=""><img src="images/heart.svg"/></a></li>
+                    <li><a ng-href=""><img src="images/discover.svg"/></a></li>
+                    <li><a ng-href=""><img src="images/profile.svg"/></a></li>
+                    <li><a ng-click="showNewStoryModal($event)"><img style="margin-right: 10px;" src="images/add-story.svg"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="feed-container">
+        <div class="feed-row-item-single" ng-repeat="story in userStories">
+            <div class="user">
+                <img class="item-profile-pic" src="images/kanad.jpg"/>
+                <strong><a class="user-profile-link">Kanad Bahalkar</a></strong>
+                <p class="timestamp">10h</p>
+                <p class="dot" ng-if="story.location !== undefined"><img src="images/dot.svg"/></p>
+                <p class="location"><img ng-if="story.location !== undefined" src="images/location.svg"/>{{story.location}}</p>
+            </div>
+            <div class="item-image" style="background-image: url({{story.imageUrl}})"></div>
+            <div class="item-actions">
+                <a class="item-action">💬  {{story.commentsCount || 0}} Comments</a>
+                <a class="item-action">❤️  {{story.likesCount || 0}} Likes</a>
+                <a class="item-action">😄  {{story.lulzCount || 0}} Lulz</a>
+                <a class="item-action">🤧  {{story.mehCount || 0}} Meh</a>
+                <a ng-click="showEditStoryModal($event, story)" style="float:right; cursor:pointer;"><img src="images/edit-story.svg"/></a>
+            </div>
+            
+            <p class="item-comment"><strong><a class="user-profile-link">Kanad Bahalkar</a></strong> {{story.description}}</p>
+
+            <!--Load Comments-->
+            <p class="item-comment" ng-repeat="comment in story.comments"><strong><a class="user-profile-link">Dummy User</a></strong> {{comment.commentText}}</p>
+            
+            <div class="item-write-comment">
+                <textarea class="write-comment" rows="1" placeholder="Add a comment..." ng-model="newComment.commentText" press-enter="writeComment(story)"></textarea>
+            </div>
+        </div>
+
+        <div class="feed-row-item-single">
+            <div class="user">
+                <img class="item-profile-pic" src="images/kanad.jpg"/>
+                <strong><a class="user-profile-link">DUMMY POST</a></strong>
+                <p class="timestamp">10h</p>
+                <p class="dot"><img src="images/dot.svg"/></p>
+                <p class="location"><img src="images/location.svg"/> Mt. Kilimanjaro</p>
+            </div>
+            <div class="item-image" style="background-image: url('../images/login-hero.jpg');"></div>
+            <div class="item-actions">
+                <a class="item-action">💬  13 Comments</a>
+                <a class="item-action">❤️  107 Likes</a>
+                <a class="item-action">😄  19 Lulz</a>
+                <a class="item-action">🤧  3 Meh</a>
+                <a ng-click="showEditStoryModal($event)" style="float:right; cursor:pointer;"><img src="images/edit-story.svg"/></a>
+            </div>
+            
+            <p class="item-comment"><strong><a class="user-profile-link">Kanad Bahalkar</a></strong> Never did I thought I'd wake up at 530AM just to see a sunrise...</p>
+            <p class="item-comment"><strong><a class="user-profile-link">Ekaterina P</a></strong> I missed this trip! 😟😟</p>
+            <p class="item-comment"><strong><a class="user-profile-link">Mayo Soni</a></strong> Lol next time...</p>
+            
+            <div class="item-write-comment">
+                <textarea class="write-comment" rows="1" placeholder="Add a comment..."></textarea>
+            </div>
+        </div>
+    </div>
+</div>

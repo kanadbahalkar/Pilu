@@ -1,0 +1,70 @@
+<div class="header">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container jumbo-header-container">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="/"><img src="images/pilu-logo-black.svg"/></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        <ul class="nav navbar-nav jumbotron-nav">
+          <li><a ng-href="/search"><img src="images/search-icon.svg"/></a></li>
+          <li><a ng-href="/search"><img src="images/vertical-seperator.svg"/></a></li>
+          <li><a class="hover-underline" ng-href="/login">Signin</a></li>
+        </ul>
+      </div>
+
+      <h1 class="jumbotron-title">
+        Everyone has a story. <br> Tell yours in style.
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="feed-filter">
+    <ul class="nav filter-nav">
+      <li><a class="hover-underline filter" ng-click="filters = ''">All</a></li>
+      <li><a ng-href="/search"><img src="images/vertical-seperator.svg"/></a></li>
+      <li><a class="hover-underline filter" ng-click="filters = {editorsChoice: true}">Editor's Picks</a></li>
+      <li><a ng-href="/search"><img src="images/vertical-seperator.svg"/></a></li>
+      <li><a class="hover-underline filter"  ng-click="filters = {trending: true}">Trending</a></li>
+    </ul>
+  </div>
+
+  <div class="feed-container">
+    <div class="feed-row-item" ng-repeat="story in publicStories| filter:filters" ><img alt="{{story.description}}" ng-src="{{story.imageUrl}}"/></div>
+  </div>
+</div>
+
+<div class="container feed-filter">
+  <button ng-click="loadMorePublicStories()" class="load-more-button">Gimme More</button>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="feed-filter">
+      <ul class="filter-nav footer-nav">
+        <li><a ng-href="/"><img width="20" src="images/facebook.svg"/></a></li>
+        <li><a ng-href="/"><img width="20" src="images/twitter.svg"/></a></li>
+        <li><a ng-href="/"><img width="20" src="images/instagram.svg"/></a></li>
+        <li><a ng-href="/"><img width="20" src="images/snapchat.svg"/></a></li>
+        <li><a ng-href="/"><img width="20" src="images/pinterest.svg"/></a></li>
+        <li><a ng-href="/"><img src="images/vertical-seperator.svg"/></a></li>
+        <li><a ng-href="/discover">Discover</a></li>
+        <li><a ng-href="/contact">Contact</a></li>
+        <li><a ng-href="/press">Press</a></li>
+        <li><a ng-href="/login">Privacy</a></li>
+        <li><a ng-href="/terms">Terms</a></li>
+      </ul>
+    </div>
+    <p style="text-align: center; margin-bottom: 50px;">Made with <span class="glyphicon glyphicon-heart"></span> and Lulz by Kanad</p>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<md-dialog aria-label="Story">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Post a New Story...</h2>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <button type="file" ng-show="uploadComplete" class="file-upload-button" ngf-select="uploadFiles($file, $invalidFiles)" accept="image/*" ngf-max-size="5MB">Select File</button>
+        <img class="file-upload-img" ng-src="{{newStory.imageUrl || 'images/upload.svg'}}">
+        <div class="item-write-comment" style="border-top: none;">
+          <textarea ng-model="newStory.description" class="write-comment" rows="1" placeholder="Write a description..."></textarea>
+        </div>
+        <div class="item-write-comment">
+          <img src="images/location.svg"/><textarea ng-model="newStory.location" class="write-comment" rows="1" placeholder="Where were you?" style="width: 90%; padding-left: 10px;"></textarea>
+        </div>
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row" style="padding: 0px 25px;">
+      <md-button ng-click="cancel()" style="color:#9b9b9b;">Cancel</md-button>
+      <md-button ng-disabled="uploadComplete" ng-click="postStory()">Post Story</md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
