@@ -14,6 +14,11 @@ cd server
 
 npm install
 
+### Running
+Go to server directory and start the API server: node server.js
+
+Go to client directory and serve the frontend: grunt serve
+
 
 ### API Docs
 Server runs on: https://localhost:4731
