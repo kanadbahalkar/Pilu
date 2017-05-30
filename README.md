@@ -21,9 +21,9 @@ Go to client directory and serve the frontend: grunt serve
 
 
 ### API Docs
-Server runs on: https://localhost:4731
+Server runs on: https://52.203.15.26:4731
 
-Base API route: https://localhost:4731/api
+Base API route: https://52.203.15.26:4731/api
 
 Subsequent routes: 
 1. Get publicly available stories for users who are not logged in

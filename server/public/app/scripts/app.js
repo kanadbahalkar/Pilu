@@ -24,8 +24,8 @@ var piluApp = angular
   ]);
 
 piluApp.constant('appConfig', {
-  apiUrl:'https://localhost:4731/api',
-  socketUrl:'https://localhost:4731/'
+  apiUrl:'https://52.203.15.26:4731/api',
+  socketUrl:'https://52.203.15.26:4731/'
 });
 
 piluApp.constant("$MD_THEME_CSS","");
