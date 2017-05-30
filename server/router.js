@@ -68,10 +68,10 @@ module.exports = function(app, io) {
     // Set url for API group routes
     app.use('/api', apiRoutes);
 
-    // app.use('/', express.static(path.join(__dirname, '/../client/app/scripts')));
-    app.use('/', express.static(path.join(__dirname, '/../client/')));
+    //Serving Angular content 
+    app.use(express.static(path.join(__dirname, '/public/app')));
+    app.use('/bower_components', express.static(path.join(__dirname, '/public/bower_components')));
     app.all('/*', function(req, res, next) {
-        // Just send the index.html for other files to support HTML5Mode
-        res.sendFile(path.join(__dirname, '/../client/app/index.html'));
+        res.sendFile(path.join(__dirname, '/public'));
     });
 };

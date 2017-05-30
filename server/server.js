@@ -45,6 +45,7 @@ socketEvents(io);
 // Setting up basic middleware for all Express requests
 app.use(logger('dev')); // Log requests to API using morgan
 
+
 // Enable CORS from client-side
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
