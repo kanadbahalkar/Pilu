@@ -72,6 +72,6 @@ module.exports = function(app, io) {
     app.use(express.static(path.join(__dirname, '/public/app')));
     app.use('/bower_components', express.static(path.join(__dirname, '/public/bower_components')));
     app.all('/*', function(req, res, next) {
-        res.sendFile(path.join(__dirname, '/public'));
+        res.sendFile(path.join(__dirname, '/public/app/index.html'));
     });
 };
