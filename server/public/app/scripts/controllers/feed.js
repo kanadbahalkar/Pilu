@@ -144,7 +144,7 @@ angular.module('piluApp')
               method: 'POST',
               data: {
                 key: file.name, // the key to store the file on S3, could be file name or customized
-                AWSAccessKeyId: 'AKIAJJ4VG64QHOZSQI2Q',
+                AWSAccessKeyId: 'AKIAITLYMBONZTV44RRA',
                 acl: 'private', // sets the access to the uploaded file in the bucket: private, public-read, ...
                 policy: 'ewogICJleHBpcmF0aW9uIjogIjIwMjAtMDEtMDFUMDA6MDA6MDBaIiwKICAiY29uZGl0aW9ucyI6IFsKICAgIHsiYnVja2V0IjogInBpbHVmdHcifSwKICAgIFsic3RhcnRzLXdpdGgiLCAiJGtleSIsICIiXSwKICAgIHsiYWNsIjogInByaXZhdGUifSwKICAgIFsic3RhcnRzLXdpdGgiLCAiJENvbnRlbnQtVHlwZSIsICIiXSwKICAgIFsic3RhcnRzLXdpdGgiLCAiJGZpbGVuYW1lIiwgIiJdLAogICAgWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsIDAsIDUyNDI4ODAwMF0KICBdCn0=', // base64-encoded json policy (see article below)
                 signature: '9KROalNMGgusNmfYOg6FHyCGLoA=', // base64-encoded signature based on policy string (see article below)
